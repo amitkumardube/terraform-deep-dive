@@ -20,3 +20,10 @@ This is intermediate terraform guide
 - Delegation and Team-Work : remote state allows you to share output values with other configurations. This is achieved by terraform_remote_state data source.
 - Documentation - https://www.terraform.io/docs/language/state/remote-state-data.html
 - Locking - Remote state can be locked so that only one team member can apply the change at any point in time.
+
+<b> Other Terraform Commands </b>
+- terraform fmt - to format your config files.
+- terraform validate - to validate the config files.
+- terraform version - to inspect the version of terraform installed.
+- terraform show - to see the output of the state file.
+- terraform state list - to list only specific resources from state file.
