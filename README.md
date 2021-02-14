@@ -27,3 +27,10 @@ This is intermediate terraform guide
 - terraform version - to inspect the version of terraform installed.
 - terraform show - to see the output of the state file.
 - terraform state list - to list only specific resources from state file.
+
+<b> Debugging in terraform </b>
+- Documentation : https://www.terraform.io/docs/internals/debugging.html.
+- TF_LOG and TF_LOG_PATH are 2 environment variables setup to control the debugging in terraform.
+- TF_LOG can be TRACE, DEBUG, INFO, WARN or ERROR. TRACE is default and most verbose.
+- TF_LOG_PATH - This is the path of the log file where you can store/append the output.
+
