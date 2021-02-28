@@ -1,3 +1,4 @@
+# this will run 2 times adding customer-0 and customer-1 from index
 resource "type" "name" {
   count = 2
   tag = {
@@ -5,7 +6,7 @@ resource "type" "name" {
     }
   }
 
-
+# this will run 2 times for each key
 resource "type" "name" {
   for_each = {
       food = "public"
