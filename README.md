@@ -8,6 +8,12 @@ This is intermediate terraform guide
 - To refer to a one of these provider in resource , we need to call them using resource { provider : provider_name.alias}
 - Documentation : https://www.terraform.io/docs/language/providers/configuration.html
 
+<b> Common resource Arguments </b>
+- depends_on : this will set an explicit dependency between resources.
+- count : this works like loop in other programing language.
+- for_each : this takes map as argument.
+- provider : this is to confirm which provider to be used for creation of this resource.
+
 <b> Purpose of state file </b>
 - Documentation - https://www.terraform.io/docs/language/state/purpose.html
 - Mapping for terraform resource to objects on cloud provider end.
