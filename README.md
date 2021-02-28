@@ -5,6 +5,7 @@ This is intermediate terraform guide
 - We can declare multiple provider blocks for same provider.
 - The one without any alias key is consider as default and will be used if others are not called  explicitly.
 - Others should be declared with alias key and value.
+- To refer to a one of these provider in resource , we need to call them using resource { provider : provider_name.alias}
 - Documentation : https://www.terraform.io/docs/language/providers/configuration.html
 
 <b> Purpose of state file </b>
