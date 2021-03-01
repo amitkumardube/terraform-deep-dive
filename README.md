@@ -20,10 +20,12 @@ This is intermediate terraform guide
     - File , environment variable , var option.
 - The variable precedence is as below.
     - Environment(least) , file , var option (most).
+
 <b> Workspaces in terraform </b>
 - Workspaces help in managing multiple environment.
 - They help you segregate your state file for each environment.
 - terraform workspaces create dev - this will create a new workspace dev.
+- The current workspace value is always stored in terraform.workspace variable and can be accessed from there.
 
 <b> Purpose of state file </b>
 - Documentation - https://www.terraform.io/docs/language/state/purpose.html
