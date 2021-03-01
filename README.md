@@ -27,6 +27,11 @@ This is intermediate terraform guide
 - ```terraform workspaces new dev``` - this will create a new workspace dev.
 - The current workspace value is always stored in `terraform.workspace` variable and can be accessed from there.
 
+<b> Importing Configuration under Terraform management using terraform import </b>
+- If you have already existing infrastructure which you like to bring under Terraform management, it's possible via terraform import.
+- The import command maps the address of a resource in terraform with ID of that resource at cloud provider end.
+- `terraform import [--var-file <name of the file>] ADDR ID`
+
 <b> Purpose of state file </b>
 - Documentation - https://www.terraform.io/docs/language/state/purpose.html
 - Mapping for terraform resource to objects on cloud provider end.
