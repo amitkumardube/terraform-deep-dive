@@ -14,6 +14,11 @@ This is intermediate terraform guide
 - for_each : this takes map as argument.
 - provider : this is to confirm which provider to be used for creation of this resource.
 
+<b> Variables in terraform </b>
+- While declaring a variable, you need to provide name , type , default value , description. The last 3 optional.
+- You can pass variable values from multiple sources
+    - File , environment variable , var option.
+
 <b> Purpose of state file </b>
 - Documentation - https://www.terraform.io/docs/language/state/purpose.html
 - Mapping for terraform resource to objects on cloud provider end.
