@@ -18,6 +18,8 @@ This is intermediate terraform guide
 - While declaring a variable, you need to provide name , type , default value , description. The last 3 optional.
 - You can pass variable values from multiple sources
     - File , environment variable , var option.
+- The variable precedence is as below.
+    - Environment(least) , file , var option (most).
 
 <b> Purpose of state file </b>
 - Documentation - https://www.terraform.io/docs/language/state/purpose.html
