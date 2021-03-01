@@ -31,6 +31,7 @@ This is intermediate terraform guide
 - If you have already existing infrastructure which you like to bring under Terraform management, it's possible via terraform import.
 - The import command maps the address of a resource in terraform with ID of that resource at cloud provider end.
 - `terraform import [--var-file <name of the file>] ADDR ID`
+- Documentation - https://www.terraform.io/docs/cli/import/index.html
 
 <b> Purpose of state file </b>
 - Documentation - https://www.terraform.io/docs/language/state/purpose.html
