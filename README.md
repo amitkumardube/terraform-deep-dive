@@ -5,7 +5,7 @@ This is intermediate terraform guide
 - This configuration block is used to configure some behaviors of Terraform itself, such as requiring a minimum Terraform Version to apply your configuration.
 - terraform {  
         required_version :  
-        required_provider {
+        required_providers {
         }  
         backend "remote" {
         }  
