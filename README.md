@@ -5,7 +5,11 @@ This is intermediate terraform guide
 - This configuration block is used to configure some behaviors of Terraform itself, such as requiring a minimum Terraform Version to apply your configuration.
 - terraform {  
         required_version :  
-        required_providers {
+        required_providers {  
+                "aws" = {  
+                        version = ">= 2.7.0"  
+                        source = "hashicorp/aws"  
+                }  
         }  
         backend "remote" {
         }  
