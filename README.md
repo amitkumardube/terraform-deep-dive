@@ -4,11 +4,11 @@ This is intermediate terraform guide
 <b> Terraform Settings </b>
 - This configuration block is used to configure some behaviors of Terraform itself, such as requiring a minimum Terraform Version to apply your configuration.
 - terraform {
-        required_version :
+        required_version :  
         required_provider {
-        }
+        }  
         backend "remote" {
-        }
+        }  
     }
 - 
 <b> Providers in details </b>
