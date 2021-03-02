@@ -6,6 +6,7 @@ This is intermediate terraform guide
 - The one without any alias key is consider as default and will be used if others are not called  explicitly.
 - Others should be declared with alias key and value.
 - To refer to a one of these provider in resource , we need to call them using resource { provider : provider_name.alias}
+- The provider block can be omitted if it has no configuration. If not specified, any reference to a provider will call provider with no configuration. if configuration is mandatory, then terraform will throw an error.
 - Documentation : https://www.terraform.io/docs/language/providers/configuration.html
 
 <b> Common resource Arguments </b>
