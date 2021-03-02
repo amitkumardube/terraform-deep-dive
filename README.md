@@ -11,10 +11,14 @@ This is intermediate terraform guide
                         source = "hashicorp/aws"  
                 }  
         }  
-        backend "remote" {
+        backend "remote" {  
+                Organization = "testing"  
+                workspaces {  
+                        name = "testing-1"  
+                }  
         }  
-    }
-- 
+    }  
+
 <b> Providers in details </b>
 - We can declare multiple provider blocks for same provider.
 - The one without any alias key is consider as default and will be used if others are not called  explicitly.
