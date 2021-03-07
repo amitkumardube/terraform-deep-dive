@@ -1,6 +1,25 @@
-# this is the variable file setup. We will talk about variables in here.
+// all the terraform variables are declared in this file
+// variables those contains default value are considered optional others are mandatory
 
-variable "environment_name" {
-    type = string
-    default = "development"
-  }
+variable "provider_config" {
+  type = object(
+    {
+      project_id = string,
+      region = string,
+      zone = string
+    }
+  )
+}
+
+variable "count_vm_names" {
+  type = list(string)
+}
+
+variable "for_each_vm_names" {
+  type = list(string)
+}
+
+variable "tags" {
+  description = "Custom tags to set on the Instances"
+  type        = map(string)
+}

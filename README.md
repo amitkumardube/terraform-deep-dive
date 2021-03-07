@@ -33,6 +33,13 @@ This is intermediate terraform guide
 - for_each : this takes map as argument.
 - provider : this is to confirm which provider to be used for creation of this resource.
 
+<b> Loops and if statement in Terraform </b>
+<b>Loops</b>
+- count : loop over resources.
+- for_each : loop over resources and inline blocks within the resources.
+- for : loop over list and map.
+<b>If statement</b>
+
 <b> Variables in terraform </b>
 - While declaring a variable, you need to provide name , type , default value , description. The last 3 optional.
 - You can pass variable values from multiple sources
