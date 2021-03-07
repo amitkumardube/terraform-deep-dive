@@ -78,4 +78,5 @@ This is intermediate terraform guide
 - TF_LOG and TF_LOG_PATH are 2 environment variables setup to control the debugging in terraform.
 - TF_LOG can be TRACE, DEBUG, INFO, WARN or ERROR. TRACE is default and most verbose.
 - TF_LOG_PATH - This is the path of the log file where you can store/append the output.
+- If the value of TF_LOG is any other value then defined above, then terraform uses the default value which is TRACE.
 
