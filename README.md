@@ -6,6 +6,7 @@ This is intermediate terraform guide
     - CLI Version
     - Required Providers
     - Backend
+    - Experimental Features
 - Documentation - https://www.terraform.io/docs/language/settings/index.html
 
 <b> Providers in details </b>
