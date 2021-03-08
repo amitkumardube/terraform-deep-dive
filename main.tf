@@ -1,0 +1,29 @@
+// This is called terraform settings block
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = "3.58.0"
+    }
+  }
+}
+
+// since we have declared the provider google, let's declare the provider block with required configuration
+
+provider "google" {
+    project = var.provider_config["project_id"]
+    region = var.provider_config["region"]
+    zone = var.provider_config["zone"]
+    credentials = file("my-first-project-298218-a7316b8c9560.json")
+}
+
+module "count_instance" {
+    source = "./count"
+    vm_names = var.count_vm_names
+}
+
+module "for_each_instance" {
+    source = "./for_each"
+    vm_names = var.for_each_vm_names
+    tags = var.tags
+}

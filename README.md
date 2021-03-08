@@ -2,22 +2,11 @@
 This is intermediate terraform guide
 
 <b> Terraform Settings </b>
-- This configuration block is used to configure some behaviors of Terraform itself, such as requiring a minimum Terraform Version to apply your configuration.
-- terraform {  
-        required_version :  
-        required_providers {  
-                "aws" = {  
-                        version = ">= 2.7.0"  
-                        source = "hashicorp/aws"  
-                }  
-        }  
-        backend "remote" {  
-                Organization = "testing"  
-                workspaces {  
-                        name = "testing-1"  
-                }  
-        }  
-    }  
+- This terraform configuration block is used to configure some behaviors of Terraform itself like
+        - CLI Version
+        - Required Providers
+        - Backend
+- Documentation - https://www.terraform.io/docs/language/settings/index.html
 
 <b> Providers in details </b>
 - We can declare multiple provider blocks for same provider.
