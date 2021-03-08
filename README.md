@@ -2,10 +2,10 @@
 This is intermediate terraform guide
 
 <b> Terraform Settings </b>
-- This terraform configuration block is used to configure some behaviors of Terraform itself like
-        - CLI Version
-        - Required Providers
-        - Backend
+- This terraform configuration block is used to configure some behaviors of Terraform itself like   
+    - CLI Version
+    - Required Providers
+    - Backend
 - Documentation - https://www.terraform.io/docs/language/settings/index.html
 
 <b> Providers in details </b>
