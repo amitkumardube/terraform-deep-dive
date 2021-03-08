@@ -6,4 +6,5 @@ variable "vm_names" {
 variable "tags" {
   description = "Custom tags to set on the Instances"
   type        = map(string)
+  sensitive = true
 }
