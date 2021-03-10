@@ -38,18 +38,12 @@ This is intermediate terraform guide
 - Documentation - https://www.terraform.io/docs/language/state/remote-state-data.html
 - Locking - Remote state can be locked so that only one team member can apply the change at any point in time.
 
-<b> Common resource Arguments </b>
-- depends_on : this will set an explicit dependency between resources.
-- count : this works like loop in other programing language.
-- for_each : this takes map as argument.
-- provider : this is to confirm which provider to be used for creation of this resource.
-
-<b> Loops and if statement in Terraform </b>
-<b>Loops</b>
+<b> Loops in Terraform </b>
 - count : loop over resources.
 - for_each : loop over resources and inline blocks within the resources.
 - for : loop over list and map.
-<b>If statement</b>
+
+<b> If statement </b>
 
 <b> Variables in terraform </b>
 - While declaring a variable, you need to provide name , type , default value , description. The last 3 optional.
@@ -57,6 +51,7 @@ This is intermediate terraform guide
     - File , environment variable , var option.
 - The variable precedence is as below.
     - Environment(least) , file , var option (most).
+- A vriable can be marked sensitive using argument sensitive = true. Any sensitive variable will not display in plain text while running plan and apply but will display in plain text in state file.
 
 <b> Workspaces in terraform </b>
 - Workspaces help in managing multiple environment.
@@ -85,4 +80,3 @@ This is intermediate terraform guide
 - TF_LOG can be TRACE, DEBUG, INFO, WARN or ERROR. TRACE is default and most verbose.
 - TF_LOG_PATH - This is the path of the log file where you can store/append the output.
 - If the value of TF_LOG is any other value then defined above, then terraform uses the default value which is TRACE.
-
