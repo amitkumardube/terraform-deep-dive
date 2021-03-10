@@ -14,7 +14,7 @@ terraform {
 
   // to use a backend other than local. Local is default
   backend "gcs" {
-    bucket = "tf_remote_state_amit"
+    bucket = "tf_remote_state_amit_test"
     prefix = "terraform/state"
   }
 }
@@ -50,5 +50,5 @@ module "for_instance" {
 }
 
 output "for_vm_names" {
-  value = module.for_instance_for_instance_names
+  value = module.for_instance.for_instance_name
 }
