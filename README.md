@@ -44,6 +44,8 @@ This is intermediate terraform guide
 - for : loop over list and map.
 
 <b> If statement </b>
+- If can be combined with any of the above loops.
+- We are using conditional statement with count loop.
 
 <b> Variables in terraform </b>
 - While declaring a variable, you need to provide name , type , default value , description. The last 3 optional.
