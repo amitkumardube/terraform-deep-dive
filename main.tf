@@ -13,13 +13,9 @@ terraform {
   experiments = [provider_sensitive_attrs]
 
   // to use a backend other than local. Local is default
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "abc"
-
-    workspaces {
-      name = "def"
-    }
+  backend "gcs" {
+    bucket = "tf_remote_state_amit"
+    prefix = "terraform/state"
   }
 }
 
