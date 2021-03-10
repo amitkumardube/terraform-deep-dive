@@ -23,3 +23,7 @@ variable "tags" {
   description = "Custom tags to set on the Instances"
   type        = map(string)
 }
+
+variable "ports" {
+  type = list(string)
+}

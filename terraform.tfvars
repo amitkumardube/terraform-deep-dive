@@ -10,3 +10,5 @@ tags = {
   "first" = "second" , 
   "third" = "fourth" 
 }
+
+ports = ["80" , "443" , "8080" , "1000-2000"]

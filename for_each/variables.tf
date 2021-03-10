@@ -8,3 +8,8 @@ variable "tags" {
   type        = map(string)
   sensitive = true
 }
+
+variable "ports" {
+  type = list(string)
+  description = "The tcp ports that are allowed on firewall"
+}

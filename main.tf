@@ -37,4 +37,5 @@ module "for_each_instance" {
     source = "./for_each"
     vm_names = var.for_each_vm_names
     tags = var.tags
+    ports = var.ports
 }

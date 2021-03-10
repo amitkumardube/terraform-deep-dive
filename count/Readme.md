@@ -7,3 +7,4 @@
 - If we need to all the instances as list , this can be returned by google_compute_instance.default[*].name
 - `count` mega-argument is available since very early version of terraform.
 - Once you use count in a resource it becomes a list of resources.
+- With count terraform only know a resource by it's index and not by name.
