@@ -28,14 +28,27 @@ provider "google" {
     credentials = file("my-first-project-298218-a7316b8c9560.json")
 }
 
+// module for count
 module "count_instance" {
     source = "./count"
     vm_names = var.count_vm_names
 }
 
+// module for for_each
 module "for_each_instance" {
     source = "./for_each"
     vm_names = var.for_each_vm_names
     tags = var.tags
     ports = var.ports
+}
+
+// module for for expression
+
+module "for_instance" {
+  source = "./for"
+  vm_names = var.count_vm_names
+}
+
+output "for_vm_names" {
+  value = module.for_instance_for_instance_names
 }
