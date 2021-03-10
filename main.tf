@@ -32,6 +32,7 @@ provider "google" {
 module "count_instance" {
     source = "./count"
     vm_names = var.count_vm_names
+    vm_required = var.vm_required
 }
 
 // module for for_each

@@ -1,5 +1,5 @@
 resource "google_compute_instance" "default" {
-  count = length(var.vm_names)
+  count = var.vm_required ? length(var.vm_names) : 0
   name = var.vm_names[count.index]
   machine_type = "n1-micro"
   tags = ["foo", "bar"]
