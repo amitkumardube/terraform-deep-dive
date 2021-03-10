@@ -61,8 +61,10 @@ This is intermediate terraform guide
 <b> Workspaces in terraform </b>
 - Workspaces help in managing multiple environment.
 - They help you segregate your state file for each environment.
-- ```terraform workspaces new dev``` - this will create a new workspace dev.
-- The current workspace value is always stored in `terraform.workspace` variable and can be accessed from there.
+- Terraform by default has a ```default``` workspace. This workspace can never be deleted.
+- ```terraform workspaces new dev``` - this will create a new workspace dev and will switch to that workspace.
+- Once there are additional workspaces, terraform stores the state file under terraform.tfstate.d/<workspace_name>/terraform.tfstate file.
+- The current workspace value is always stored in `terraform.workspace` variable and can be accessed from there during interpolation.
 
 <b> Importing Configuration under Terraform management using terraform import </b>
 - If you have already existing infrastructure which you like to bring under Terraform management, it's possible via terraform import.
@@ -71,11 +73,11 @@ This is intermediate terraform guide
 - Documentation - https://www.terraform.io/docs/cli/import/index.html
 
 <b> Other Terraform Commands </b>
-- terraform fmt - to format your config files.
-- terraform validate - to validate the config files.
+- terraform fmt - to format your config files. - https://www.terraform.io/docs/cli/commands/fmt.html
+- terraform validate - to validate the config files. - https://www.terraform.io/docs/cli/commands/validate.html
 - terraform version - to inspect the version of terraform installed.
-- terraform show - to see the output of the state file.
-- terraform state list - to list only specific resources from state file.
+- terraform show - to see the human readable output of the state file or plan file. - https://www.terraform.io/docs/cli/commands/show.html
+- terraform state - this is used for management for state file. - https://www.terraform.io/docs/cli/commands/state/index.html
 
 <b> Debugging in terraform </b>
 - Documentation : https://www.terraform.io/docs/internals/debugging.html.
