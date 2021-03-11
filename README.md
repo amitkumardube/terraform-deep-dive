@@ -1,5 +1,18 @@
-# terraform-intermediate
-This is intermediate terraform guide
+# terraform-deep-dive
+This is Terraform Deep Dive guide
+
+Topics to Cover
+- Terraform Settings
+- Providers ( multiple blocks for same provider )
+- Backend
+- State and Remote State
+- Loops and If statement
+- Variables ( sensitive )
+- Workspaces
+- Other Terraform Commands
+- Terraform Import
+- Debugging in Terraform
+- Certification Journey
 
 <b> Terraform Settings </b>
 - This terraform configuration block is used to configure some behaviors of Terraform itself like   
