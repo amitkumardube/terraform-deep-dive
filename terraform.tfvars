@@ -3,7 +3,7 @@ provider_config = {
   region = "us-central",
   zone = "us-central1-a",
   new_region = "us-east",
-  new_zone = "us-east1-a"
+  new_zone = "us-east1-b"
 }
 
 count_vm_names = ["terraform-1","terraform-2"]
