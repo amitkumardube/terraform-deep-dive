@@ -6,7 +6,9 @@ variable "provider_config" {
     {
       project_id = string,
       region = string,
-      zone = string
+      zone = string,
+      new_region = string,
+      new_zone = string
     }
   )
 }

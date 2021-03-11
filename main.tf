@@ -25,7 +25,15 @@ provider "google" {
     project = var.provider_config["project_id"]
     region = var.provider_config["region"]
     zone = var.provider_config["zone"]
-    credentials = file("my-first-project-298218-a7316b8c9560.json")
+    credentials = file("my-first-project-298218-964978bfcdc4.json")
+}
+
+provider "google" {
+    project = var.provider_config["project_id"]
+    region = var.provider_config["new_region"]
+    zone = var.provider_config["new_zone"]
+    credentials = file("my-first-project-298218-964978bfcdc4.json")
+    alias = "new_region"
 }
 
 // module for count
@@ -33,6 +41,16 @@ module "count_instance" {
     source = "./count"
     vm_names = var.count_vm_names
     vm_required = var.vm_required
+}
+
+// module for count with new_region_provider
+module "count_instance_new_provider" {
+    source = "./count"
+    vm_names = var.count_vm_names
+    vm_required = var.vm_required
+    providers = {
+      google = google.new_region
+    }
 }
 
 // module for for_each
@@ -50,6 +68,3 @@ module "for_instance" {
   vm_names = var.count_vm_names
 }
 
-output "for_vm_names" {
-  value = module.for_instance.for_instance_name
-}

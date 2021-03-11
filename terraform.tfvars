@@ -1,7 +1,9 @@
 provider_config = {
   project_id = "my-first-project-298218",
   region = "us-central",
-  zone = "us-central1-a"
+  zone = "us-central1-a",
+  new_region = "us-east",
+  new_zone = "us-east1-a"
 }
 
 count_vm_names = ["terraform-1","terraform-2"]
