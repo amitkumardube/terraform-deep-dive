@@ -84,6 +84,7 @@ This is intermediate terraform guide
 - If the value of TF_LOG is any other value then defined above, then terraform uses the default value which is TRACE.
 
 <b> Terraform Associate Certification Journey </b>
+
 https://amitkumardube.medium.com/hashicorp-terraform-associate-certification-journey-2021-ee5577f6f9da
 
 <b> Some sample Certification Questions </b>
