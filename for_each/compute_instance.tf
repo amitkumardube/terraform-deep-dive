@@ -1,7 +1,7 @@
 resource "google_compute_instance" "default" {
   for_each = toset(var.vm_names)
   name = each.value
-  machine_type = "n1-micro"
+  machine_type = "f1-micro"
   tags = ["foo", "bar"]
 
   boot_disk {
