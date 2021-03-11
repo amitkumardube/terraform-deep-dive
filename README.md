@@ -87,4 +87,4 @@ This is intermediate terraform guide
 
 https://amitkumardube.medium.com/hashicorp-terraform-associate-certification-journey-2021-ee5577f6f9da
 
-<b> Some sample Certification Questions </b>
+<b> Some Sample Certification Questions </b>
