@@ -1,4 +1,4 @@
-# Count Meta Argument
+# For Each Meta Argument
 
 - This is used to loop over entire resource or inline block within a resource.
 - It works with list , set and map. 
