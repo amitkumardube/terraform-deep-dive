@@ -60,14 +60,6 @@ Topics to Cover
 - If can be combined with any of the above loops.
 - We are using conditional statement with count loop.
 
-<b> Variables in terraform </b>
-- While declaring a variable, you need to provide name , type , default value , description. The last 3 optional.
-- You can pass variable values from multiple sources
-    - File , environment variable , var option.
-- The variable precedence is as below.
-    - Environment(least) , file , var option (most).
-- A vriable can be marked sensitive using argument sensitive = true. Any sensitive variable will not display in plain text while running plan and apply but will display in plain text in state file.
-
 <b> Workspaces in terraform </b>
 - Workspaces help in managing multiple environment.
 - They help you segregate your state file for each environment.
