@@ -35,6 +35,9 @@ Topics to Cover
 - If you have never used a backend then you are by default using a local backend.
 - Local backend stores state information in local terraform.tfstate file and operations are run locally.
 - Documentation : https://www.terraform.io/docs/language/settings/backends/index.html
+- In our code we are using GCS(google cloud storage) as backend. The GCS supports locking aby default. By default terraform tries to take the back of the state file for each operation that modifies the state. To take state backup with GCS we need to enable bucket versioning. Please follow below steps to do this.
+    - **gsutil versioning set on gs://tf_remote_state_amit_test** // this will enable the versioning on the bucket.
+    - **gsutil ls-a gs://tf_remote_state_amit_test/terraform/state** // This will list all the versions of the objects inside the bucket.
 
 <b> Purpose of state file </b>
 - Documentation - https://www.terraform.io/docs/language/state/purpose.html
