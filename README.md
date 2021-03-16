@@ -7,7 +7,6 @@ Topics to Cover
 - Backend
 - State and Remote State
 - Loops and If statement
-- Variables ( sensitive )
 - Workspaces
 - Other Terraform Commands
 - Terraform Import
