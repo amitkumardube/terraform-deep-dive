@@ -93,6 +93,6 @@ Topics to Cover
 
 <b> Terraform Associate Certification Journey </b>
 
-https://amitkumardube.medium.com/hashicorp-terraform-associate-certification-journey-2021-ee5577f6f9da
+https://amitkumardube.medium.com/hashicorp-terraform-associate-certification-journey-2021-ee5577f6f9da?source=friends_link&sk=f1f54b852f9d4da2932db3090c9b0045
 
 <b> Some Sample Certification Questions </b>
